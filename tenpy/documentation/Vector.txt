@@ -1,0 +1,28 @@
+########################################################################################################################
+### Creating a Vector
+########################################################################################################################
+
+CreateVector([vector_array]) | To create a Tenpy vector object
+
+########################################################################################################################
+### General Properties
+########################################################################################################################
+
+vector.val()   | To convert the vector object into a list of components
+vector.mag()   | To find the magnitude of the vector
+vector.angle() | To find the angle of the 2d Vector
+
+########################################################################################################################
+### Vector Operations
+########################################################################################################################
+
+vector.element_eval(vector, operation{+, -, *}) | To elementally operate on two vectors
+vector.dot_prod(vector)                         | To find the dot product of two vectors
+vector.cross_prod(vector)                       | To find the cross product of two vectors
+
+########################################################################################################################
+### VECTOR RELATIONS
+########################################################################################################################
+
+vector.is_parallel(other)   | Checks if two vectors are parallel
+vector.is_orthogonal(other) | Checks if two vectors are orthogonal

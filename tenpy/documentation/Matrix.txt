@@ -1,0 +1,34 @@
+########################################################################################################################
+### Creating a Matrix
+########################################################################################################################
+
+CreateMatrix() | To create a Tenpy matrix object
+
+########################################################################################################################
+### General Properties
+########################################################################################################################
+
+matrix.val()                | To convert the vector object into a list of components
+matrix.dimensions()         | To find the dimensions of the given matrix
+matrix.get_column(index)    | To get a specified column of a matrix
+matrix.delete_column(index) | To delete a specified column of a matrix
+
+########################################################################################################################
+### Special Matrices
+########################################################################################################################
+
+matrix.get_null_matrix(columns, rows) | To get a matrix of any size filled with None (null) values
+matrix.get_identity_matrix(size)      | To get a square identity matrix of any dimension size
+
+########################################################################################################################
+### Matrix Operations
+########################################################################################################################
+
+matrix.element_eval(matrix, operation{+, -, *}) | To elementally operate on two matrices
+matrix.constmul(constant)                       | To find the product of a matrix and a constant
+matrix.matvecmul(vector)                        | To find the product of a matrix and a vector
+matrix.matmul(matrix)                           | To find the product of two matrices
+matrix.determ()                                 | To find the determinant of a matrix
+matrix.cofactor()                               | To find the cofactor of a matrix
+matrix.inverse()                                | To find the inverse of a matrix
+matrix.transpose()                              | To find the transposition of a matrix
